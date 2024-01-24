@@ -84,7 +84,7 @@ const createGalleryItem = image => {
 
 imagesContainer.innerHTML = createGalleryItem(images);
 
-const lightbox = new SimpleLightbox('.gallery a', {
+const lightbox = new SimpleLightbox('.gallery-image', {
     captionsData: 'alt',
     captionPosition: 'bottom',
     captionDelay: 250,
