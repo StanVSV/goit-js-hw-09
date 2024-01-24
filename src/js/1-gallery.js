@@ -69,7 +69,7 @@ const images = [
   },
 ];
 
-const imagesContainer = document.querySelector('.gallery-image');
+const imagesContainer = document.querySelector('.gallery');
 
 const createGalleryItem = image => {
     return image.map(({ preview, original, description }) => `
@@ -84,7 +84,7 @@ const createGalleryItem = image => {
 
 imagesContainer.innerHTML = createGalleryItem(images);
 
-const lightbox = new SimpleLightbox('.gallery-image', {
+const lightbox = new SimpleLightbox('.gallery a', {
     captionsData: 'alt',
     captionPosition: 'bottom',
     captionDelay: 250,
